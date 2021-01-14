@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nf}{contaElementos} \PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{3}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{]} \PYG{o+ow}{=} \PYG{p}{[(}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{3}\PYG{p}{),} \PYG{p}{(}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{2}\PYG{p}{),} \PYG{p}{(}\PYG{l+m+mi}{3}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{)]}
+
+\PYG{n+nf}{contaElementos} \PYG{o+ow}{=} \PYG{n}{map} \PYG{p}{(}\PYG{n}{head}\PYG{p}{,} \PYG{n}{length}\PYG{p}{)} \PYG{o}{.} \PYG{n}{group} \PYG{o}{.} \PYG{n}{sort}
+\end{Verbatim}

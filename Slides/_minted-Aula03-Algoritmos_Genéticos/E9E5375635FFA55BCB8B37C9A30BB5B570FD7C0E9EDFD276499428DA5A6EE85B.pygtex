@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nf}{bitFlip} \PYG{n}{pm} \PYG{n}{genes} \PYG{o+ow}{=} \PYG{k+kr}{do}
+  \PYG{n}{forEach} \PYG{n}{gene} \PYG{k+kr}{in} \PYG{n}{genes} \PYG{k+kr}{do}
+    \PYG{n}{flip}\PYG{o}{?} \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{random}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{)}
+    \PYG{k+kr}{if} \PYG{n}{flip}\PYG{o}{?} \PYG{o}{\PYGZlt{}=} \PYG{n}{pm}
+      \PYG{k+kr}{then} \PYG{p}{(}\PYG{l+m+mi}{1}\PYG{o}{\PYGZhy{}}\PYG{n}{gene}\PYG{p}{)}
+      \PYG{k+kr}{else} \PYG{n}{gene}
+\end{Verbatim}

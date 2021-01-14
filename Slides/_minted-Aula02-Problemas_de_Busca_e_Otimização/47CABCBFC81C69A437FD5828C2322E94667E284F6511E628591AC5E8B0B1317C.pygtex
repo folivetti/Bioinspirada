@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{SimulatedAnnealing}\PYG{p}{():}
+    \PYG{n}{s0} \PYG{o}{=} \PYG{n}{solucaoInicial}\PYG{p}{()}
+    \PYG{n}{T} \PYG{o}{=} \PYG{l+m+mi}{100}
+    \PYG{k}{while} \PYG{n}{T} \PYG{o}{\PYGZgt{}} \PYG{n}{eps}\PYG{p}{:}
+        \PYG{n}{s} \PYG{o}{=} \PYG{n}{estadoVizinhoAleatorio}\PYG{p}{(}\PYG{n}{s0}\PYG{p}{)}
+        \PYG{k}{if} \PYG{n}{f}\PYG{p}{(}\PYG{n}{s}\PYG{p}{)} \PYG{o}{\PYGZgt{}} \PYG{n}{f}\PYG{p}{(}\PYG{n}{s0}\PYG{p}{):}
+            \PYG{n}{s0} \PYG{o}{=} \PYG{n}{s}
+        \PYG{k}{else}\PYG{p}{:}
+            \PYG{k}{if} \PYG{n}{random}\PYG{p}{()} \PYG{o}{\PYGZlt{}=} \PYG{n}{exp}\PYG{p}{((}\PYG{n}{f}\PYG{p}{(}\PYG{n}{s}\PYG{p}{)}\PYG{o}{\PYGZhy{}}\PYG{n}{f}\PYG{p}{(}\PYG{n}{s0}\PYG{p}{))}\PYG{o}{/}\PYG{n}{T}\PYG{p}{):}
+                \PYG{n}{s0} \PYG{o}{=} \PYG{n}{s}
+        \PYG{n}{T} \PYG{o}{=} \PYG{n}{reduz}\PYG{p}{(}\PYG{n}{T}\PYG{p}{)}
+\end{Verbatim}

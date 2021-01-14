@@ -1,0 +1,52 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nf}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{frame}\PYG{p}{\PYGZcb{}\PYGZob{}}\PYG{k+kt}{Vizinhança} \PYG{n}{das} \PYG{k+kt}{Soluções}\PYG{p}{\PYGZcb{}}
+\PYG{n+nf}{\PYGZbs{}}\PYG{n}{protect}\PYG{n+nf}{\PYGZbs{}}\PYG{n}{hypertarget}\PYG{p}{\PYGZob{}}\PYG{n}{vizinhanuxe7a}\PYG{o}{\PYGZhy{}}\PYG{n}{das}\PYG{o}{\PYGZhy{}}\PYG{n}{soluuxe7uxf5es}\PYG{p}{\PYGZcb{}\PYGZob{}\PYGZcb{}}
+\PYG{k+kt}{A} \PYG{n}{vizinhança} \PYG{n+nf}{\PYGZbs{}}\PYG{p}{(}\PYG{k+kt}{N}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)}\PYG{n+nf}{\PYGZbs{}}\PYG{p}{)} \PYG{n}{da} \PYG{n}{solução} \PYG{n+nf}{\PYGZbs{}}\PYG{p}{(}\PYG{n}{x}\PYG{n+nf}{\PYGZbs{}}\PYG{p}{)} \PYG{n}{é} \PYG{n}{o} \PYG{n}{conjunto} \PYG{n}{de} \PYG{n}{soluções} \PYG{n}{próximas}
+\PYG{n+nf}{a} \PYG{n}{ela}\PYG{o}{.}
+\PYG{n+nf}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{frame}\PYG{p}{\PYGZcb{}}
+
+\PYG{n+nf}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{frame}\PYG{p}{\PYGZcb{}\PYGZob{}}\PYG{k+kt}{Algoritmo} \PYG{n}{de} \PYG{k+kt}{Busca}\PYG{p}{\PYGZcb{}}
+\PYG{n+nf}{\PYGZbs{}}\PYG{n}{protect}\PYG{n+nf}{\PYGZbs{}}\PYG{n}{hypertarget}\PYG{p}{\PYGZob{}}\PYG{n}{algoritmo}\PYG{o}{\PYGZhy{}}\PYG{n}{de}\PYG{o}{\PYGZhy{}}\PYG{n}{busca}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{\PYGZcb{}\PYGZob{}\PYGZcb{}}
+\PYG{n+nf}{\PYGZbs{}}\PYG{n}{includegraphics}\PYG{p}{[}\PYG{n}{width}\PYG{o+ow}{=}\PYG{l+m+mf}{2.08333}\PYG{n}{in}\PYG{p}{,}\PYG{n}{height}\PYG{o}{=\PYGZbs{}}\PYG{n}{textheight}\PYG{p}{]\PYGZob{}}\PYG{n}{img}\PYG{o}{/}\PYG{n}{bioinsp23}\PYG{o}{.}\PYG{n}{png}\PYG{p}{\PYGZcb{}}
+\PYG{n+nf}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{frame}\PYG{p}{\PYGZcb{}}
+
+\PYG{n+nf}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{frame}\PYG{p}{\PYGZcb{}\PYGZob{}}\PYG{k+kt}{Algoritmo} \PYG{n}{de} \PYG{k+kt}{Busca}\PYG{p}{\PYGZcb{}}
+\PYG{n+nf}{\PYGZbs{}}\PYG{n}{protect}\PYG{n+nf}{\PYGZbs{}}\PYG{n}{hypertarget}\PYG{p}{\PYGZob{}}\PYG{n}{algoritmo}\PYG{o}{\PYGZhy{}}\PYG{n}{de}\PYG{o}{\PYGZhy{}}\PYG{n}{busca}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{2}\PYG{p}{\PYGZcb{}\PYGZob{}\PYGZcb{}}
+\PYG{n+nf}{\PYGZbs{}}\PYG{n}{includegraphics}\PYG{p}{[}\PYG{n}{width}\PYG{o+ow}{=}\PYG{l+m+mf}{2.08333}\PYG{n}{in}\PYG{p}{,}\PYG{n}{height}\PYG{o}{=\PYGZbs{}}\PYG{n}{textheight}\PYG{p}{]\PYGZob{}}\PYG{n}{img}\PYG{o}{/}\PYG{n}{bioinsp24}\PYG{o}{.}\PYG{n}{png}\PYG{p}{\PYGZcb{}}
+\PYG{n+nf}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{frame}\PYG{p}{\PYGZcb{}}
+
+\PYG{n+nf}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{frame}\PYG{p}{\PYGZcb{}\PYGZob{}}\PYG{k+kt}{Algoritmo} \PYG{n}{de} \PYG{k+kt}{Busca}\PYG{p}{\PYGZcb{}}
+\PYG{n+nf}{\PYGZbs{}}\PYG{n}{protect}\PYG{n+nf}{\PYGZbs{}}\PYG{n}{hypertarget}\PYG{p}{\PYGZob{}}\PYG{n}{algoritmo}\PYG{o}{\PYGZhy{}}\PYG{n}{de}\PYG{o}{\PYGZhy{}}\PYG{n}{busca}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{3}\PYG{p}{\PYGZcb{}\PYGZob{}\PYGZcb{}}
+\PYG{n+nf}{\PYGZbs{}}\PYG{n}{includegraphics}\PYG{p}{[}\PYG{n}{width}\PYG{o+ow}{=}\PYG{l+m+mf}{2.08333}\PYG{n}{in}\PYG{p}{,}\PYG{n}{height}\PYG{o}{=\PYGZbs{}}\PYG{n}{textheight}\PYG{p}{]\PYGZob{}}\PYG{n}{img}\PYG{o}{/}\PYG{n}{bioinsp25}\PYG{o}{.}\PYG{n}{png}\PYG{p}{\PYGZcb{}}
+\PYG{n+nf}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{frame}\PYG{p}{\PYGZcb{}}
+
+\PYG{n+nf}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{frame}\PYG{p}{\PYGZcb{}\PYGZob{}}\PYG{k+kt}{Algoritmo} \PYG{n}{de} \PYG{k+kt}{Busca}\PYG{p}{\PYGZcb{}}
+\PYG{n+nf}{\PYGZbs{}}\PYG{n}{protect}\PYG{n+nf}{\PYGZbs{}}\PYG{n}{hypertarget}\PYG{p}{\PYGZob{}}\PYG{n}{algoritmo}\PYG{o}{\PYGZhy{}}\PYG{n}{de}\PYG{o}{\PYGZhy{}}\PYG{n}{busca}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{4}\PYG{p}{\PYGZcb{}\PYGZob{}\PYGZcb{}}
+\PYG{n+nf}{\PYGZbs{}}\PYG{n}{includegraphics}\PYG{p}{[}\PYG{n}{width}\PYG{o+ow}{=}\PYG{l+m+mf}{2.08333}\PYG{n}{in}\PYG{p}{,}\PYG{n}{height}\PYG{o}{=\PYGZbs{}}\PYG{n}{textheight}\PYG{p}{]\PYGZob{}}\PYG{n}{img}\PYG{o}{/}\PYG{n}{bioinsp26}\PYG{o}{.}\PYG{n}{png}\PYG{p}{\PYGZcb{}}
+\PYG{n+nf}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{frame}\PYG{p}{\PYGZcb{}}
+
+\PYG{n+nf}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{frame}\PYG{p}{\PYGZcb{}\PYGZob{}}\PYG{k+kt}{Algoritmo} \PYG{n}{de} \PYG{k+kt}{Busca}\PYG{p}{\PYGZcb{}}
+\PYG{n+nf}{\PYGZbs{}}\PYG{n}{protect}\PYG{n+nf}{\PYGZbs{}}\PYG{n}{hypertarget}\PYG{p}{\PYGZob{}}\PYG{n}{algoritmo}\PYG{o}{\PYGZhy{}}\PYG{n}{de}\PYG{o}{\PYGZhy{}}\PYG{n}{busca}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{5}\PYG{p}{\PYGZcb{}\PYGZob{}\PYGZcb{}}
+\PYG{n+nf}{\PYGZbs{}}\PYG{n}{includegraphics}\PYG{p}{[}\PYG{n}{width}\PYG{o+ow}{=}\PYG{l+m+mf}{2.08333}\PYG{n}{in}\PYG{p}{,}\PYG{n}{height}\PYG{o}{=\PYGZbs{}}\PYG{n}{textheight}\PYG{p}{]\PYGZob{}}\PYG{n}{img}\PYG{o}{/}\PYG{n}{bioinsp27}\PYG{o}{.}\PYG{n}{png}\PYG{p}{\PYGZcb{}}
+\PYG{n+nf}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{frame}\PYG{p}{\PYGZcb{}}
+
+\PYG{n+nf}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{frame}\PYG{p}{\PYGZcb{}\PYGZob{}}\PYG{k+kt}{Algoritmo} \PYG{n}{de} \PYG{k+kt}{Busca}\PYG{p}{\PYGZcb{}}
+\PYG{n+nf}{\PYGZbs{}}\PYG{n}{protect}\PYG{n+nf}{\PYGZbs{}}\PYG{n}{hypertarget}\PYG{p}{\PYGZob{}}\PYG{n}{algoritmo}\PYG{o}{\PYGZhy{}}\PYG{n}{de}\PYG{o}{\PYGZhy{}}\PYG{n}{busca}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{6}\PYG{p}{\PYGZcb{}\PYGZob{}\PYGZcb{}}
+\PYG{n+nf}{\PYGZbs{}}\PYG{n}{includegraphics}\PYG{p}{[}\PYG{n}{width}\PYG{o+ow}{=}\PYG{l+m+mf}{2.08333}\PYG{n}{in}\PYG{p}{,}\PYG{n}{height}\PYG{o}{=\PYGZbs{}}\PYG{n}{textheight}\PYG{p}{]\PYGZob{}}\PYG{n}{img}\PYG{o}{/}\PYG{n}{bioinsp28}\PYG{o}{.}\PYG{n}{png}\PYG{p}{\PYGZcb{}}
+\PYG{n+nf}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{frame}\PYG{p}{\PYGZcb{}}
+
+\PYG{n+nf}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{frame}\PYG{p}{\PYGZcb{}\PYGZob{}}\PYG{k+kt}{Algoritmo} \PYG{n}{de} \PYG{k+kt}{Busca}\PYG{p}{\PYGZcb{}}
+\PYG{n+nf}{\PYGZbs{}}\PYG{n}{protect}\PYG{n+nf}{\PYGZbs{}}\PYG{n}{hypertarget}\PYG{p}{\PYGZob{}}\PYG{n}{algoritmo}\PYG{o}{\PYGZhy{}}\PYG{n}{de}\PYG{o}{\PYGZhy{}}\PYG{n}{busca}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{7}\PYG{p}{\PYGZcb{}\PYGZob{}\PYGZcb{}}
+\PYG{n+nf}{\PYGZbs{}}\PYG{n}{includegraphics}\PYG{p}{[}\PYG{n}{width}\PYG{o+ow}{=}\PYG{l+m+mf}{2.08333}\PYG{n}{in}\PYG{p}{,}\PYG{n}{height}\PYG{o}{=\PYGZbs{}}\PYG{n}{textheight}\PYG{p}{]\PYGZob{}}\PYG{n}{img}\PYG{o}{/}\PYG{n}{bioinsp29}\PYG{o}{.}\PYG{n}{png}\PYG{p}{\PYGZcb{}}
+\PYG{n+nf}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{frame}\PYG{p}{\PYGZcb{}}
+
+\PYG{n+nf}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{frame}\PYG{p}{\PYGZcb{}\PYGZob{}}\PYG{k+kt}{Algoritmo} \PYG{n}{de} \PYG{k+kt}{Busca}\PYG{p}{\PYGZcb{}}
+\PYG{n+nf}{\PYGZbs{}}\PYG{n}{protect}\PYG{n+nf}{\PYGZbs{}}\PYG{n}{hypertarget}\PYG{p}{\PYGZob{}}\PYG{n}{algoritmo}\PYG{o}{\PYGZhy{}}\PYG{n}{de}\PYG{o}{\PYGZhy{}}\PYG{n}{busca}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{8}\PYG{p}{\PYGZcb{}\PYGZob{}\PYGZcb{}}
+\PYG{n+nf}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{minted}\PYG{p}{\PYGZcb{}}\PYG{k+kt}{[]}\PYG{p}{\PYGZob{}}\PYG{n}{haskell}\PYG{p}{\PYGZcb{}}
+\PYG{n+nf}{x} \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{solucaoAleatoria}
+\PYG{n+nf}{while} \PYG{n}{change} \PYG{k+kr}{do}
+  \PYG{n}{x\PYGZsq{}} \PYG{o+ow}{=} \PYG{n}{x} \PYG{o}{+} \PYG{n}{f\PYGZsq{}}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)}\PYG{o}{/}\PYG{n}{f\PYGZsq{}\PYGZsq{}}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)}
+  \PYG{k+kr}{if} \PYG{n}{f}\PYG{p}{(}\PYG{n}{x\PYGZsq{}}\PYG{p}{)} \PYG{o}{\PYGZgt{}} \PYG{n}{f}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)}
+    \PYG{k+kr}{then} \PYG{n}{x} \PYG{o+ow}{=} \PYG{n}{x\PYGZsq{}}
+\PYG{n+nf}{return} \PYG{n}{x}
+\end{Verbatim}

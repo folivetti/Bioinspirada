@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nf}{full} \PYG{n}{max\PYGZus{}depth} \PYG{o+ow}{=}
+  \PYG{n}{node} \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{k+kr}{if} \PYG{n}{max\PYGZus{}depth} \PYG{o}{==} \PYG{l+m+mi}{0}
+            \PYG{k+kr}{then} \PYG{n}{sampleTerm}
+            \PYG{k+kr}{else} \PYG{n}{sampleNonTerm}
+  \PYG{n}{children} \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{for} \PYG{p}{[}\PYG{l+m+mi}{1} \PYG{o}{..} \PYG{n}{arity}\PYG{p}{(}\PYG{n}{node}\PYG{p}{)]} \PYG{p}{(}\PYG{n}{full} \PYG{p}{(}\PYG{n}{max\PYGZus{}depth}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{))}
+  \PYG{n}{return} \PYG{p}{(}\PYG{k+kt}{Node} \PYG{n}{node} \PYG{n}{children}\PYG{p}{)}
+\end{Verbatim}

@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nf}{changeAt} \PYG{n}{p} \PYG{n}{f} \PYG{n}{node} \PYG{o+ow}{=} \PYG{k+kr}{do}
+  \PYG{k+kr}{if} \PYG{n}{p} \PYG{o}{\PYGZlt{}=} \PYG{l+m+mi}{1}
+    \PYG{k+kr}{then} \PYG{n}{return}\PYG{p}{(}\PYG{n}{f}\PYG{p}{(}\PYG{n}{node}\PYG{p}{))}
+    \PYG{k+kr}{else} \PYG{k+kr}{do}
+      \PYG{n}{ts\PYGZsq{}} \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{changeChildren}\PYG{p}{(}\PYG{n}{p}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{f}\PYG{p}{,} \PYG{n}{ts}\PYG{p}{)}
+      \PYG{n}{return}\PYG{p}{(}\PYG{n}{replaceChildren}\PYG{p}{(}\PYG{n}{node}\PYG{p}{,} \PYG{n}{ts\PYGZsq{}}\PYG{p}{))}
+\end{Verbatim}

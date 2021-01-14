@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nf}{uniformCX} \PYG{n}{pc} \PYG{n}{thr} \PYG{p}{(}\PYG{n}{p1}\PYG{p}{,} \PYG{n}{p2}\PYG{p}{)} \PYG{o+ow}{=} \PYG{k+kr}{do}
+  \PYG{n}{cx}\PYG{o}{?}      \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{random}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{)}
+  \PYG{p}{(}\PYG{n}{c1}\PYG{p}{,} \PYG{n}{c2}\PYG{p}{)} \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{p}{(}\PYG{k+kt}{[]}\PYG{p}{,} \PYG{k+kt}{[]}\PYG{p}{)}
+  \PYG{k+kr}{if} \PYG{n}{cx}\PYG{o}{?} \PYG{o}{\PYGZlt{}=} \PYG{n}{pc}
+    \PYG{k+kr}{then} \PYG{k+kr}{do}
+      \PYG{n}{rs} \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{sample} \PYG{n}{length}\PYG{p}{(}\PYG{n}{p1}\PYG{p}{)} \PYG{n}{random}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{)}
+      \PYG{n}{forEach} \PYG{n}{p1i}\PYG{p}{,} \PYG{n}{p2i}\PYG{p}{,} \PYG{n}{r} \PYG{k+kr}{in} \PYG{p}{(}\PYG{n}{p1}\PYG{p}{,} \PYG{n}{p2}\PYG{p}{,} \PYG{n}{rs}\PYG{p}{)} \PYG{k+kr}{do}
+        \PYG{k+kr}{if} \PYG{p}{(}\PYG{n}{r} \PYG{o}{\PYGZlt{}=} \PYG{n}{thr}\PYG{p}{)}
+          \PYG{k+kr}{then} \PYG{k+kr}{do} \PYG{n}{c1} \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{insert} \PYG{n}{p1i} \PYG{n}{c1}
+                  \PYG{n}{c2} \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{insert} \PYG{n}{p2i} \PYG{n}{c2}
+          \PYG{k+kr}{else} \PYG{k+kr}{do} \PYG{n}{c1} \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{insert} \PYG{n}{p2i} \PYG{n}{c1}
+                  \PYG{n}{c2} \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{insert} \PYG{n}{p1i} \PYG{n}{c2}
+        \PYG{n}{return} \PYG{p}{(}\PYG{n}{c1}\PYG{p}{,} \PYG{n}{c2}\PYG{p}{)}
+    \PYG{k+kr}{else} \PYG{n}{return} \PYG{p}{(}\PYG{n}{p1}\PYG{p}{,} \PYG{n}{p2}\PYG{p}{)}
+\end{Verbatim}

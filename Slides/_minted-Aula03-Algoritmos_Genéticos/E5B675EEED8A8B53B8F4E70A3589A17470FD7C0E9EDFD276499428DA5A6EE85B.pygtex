@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nf}{sus} \PYG{n}{n} \PYG{n}{fs} \PYG{o+ow}{=} \PYG{k+kr}{do}
+  \PYG{n}{r}       \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{random}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{o}{/}\PYG{n}{n}\PYG{p}{)}
+  \PYG{n}{wheel}   \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{cumsum}\PYG{p}{(}\PYG{n}{probability}\PYG{p}{(}\PYG{n}{fs}\PYG{p}{))}
+  \PYG{n}{choices} \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{for} \PYG{p}{[}\PYG{l+m+mi}{1}\PYG{o}{..}\PYG{n}{n}\PYG{p}{]} \PYG{p}{(}\PYG{n+nf}{\PYGZbs{}}\PYG{n}{i} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{n}{firstOf} \PYG{p}{(}\PYG{o}{\PYGZgt{}}\PYG{p}{(}\PYG{n}{r}\PYG{o}{*}\PYG{n}{i}\PYG{p}{))} \PYG{n}{wheel}\PYG{p}{)}
+  \PYG{n}{return} \PYG{n}{choices}
+\end{Verbatim}

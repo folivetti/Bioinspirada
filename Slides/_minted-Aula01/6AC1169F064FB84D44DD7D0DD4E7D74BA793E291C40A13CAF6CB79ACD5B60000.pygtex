@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nf}{x} \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{solucaoAleatoria}
+\PYG{n+nf}{while} \PYG{n}{change} \PYG{k+kr}{do}
+  \PYG{n}{x\PYGZsq{}} \PYG{o+ow}{=} \PYG{n}{x} \PYG{o}{+} \PYG{n}{f\PYGZsq{}}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)}\PYG{o}{/}\PYG{n}{f\PYGZsq{}\PYGZsq{}}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)}
+  \PYG{k+kr}{if} \PYG{n}{f}\PYG{p}{(}\PYG{n}{x\PYGZsq{}}\PYG{p}{)} \PYG{o}{\PYGZgt{}} \PYG{n}{f}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)}
+    \PYG{k+kr}{then} \PYG{n}{x} \PYG{o+ow}{=} \PYG{n}{x\PYGZsq{}}
+\PYG{n+nf}{return} \PYG{n}{x}
+\end{Verbatim}

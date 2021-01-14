@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nf}{pop} \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{populacaoAleatoria}
+\PYG{n+nf}{f}   \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{avalia} \PYG{n}{pop}
+\PYG{n+nf}{enquanto} \PYG{n}{não} \PYG{n}{terminar} \PYG{k+kr}{do}
+  \PYG{n}{pop} \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{seleciona} \PYG{n}{pop}
+  \PYG{n}{pop} \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{altera} \PYG{n}{pop}
+  \PYG{n}{f}   \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{avalia} \PYG{n}{pop}
+\end{Verbatim}
