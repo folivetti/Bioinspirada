@@ -1,6 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n+nf}{p} \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{populaçãoInicial}
-\PYG{n+nf}{while} \PYG{n}{not} \PYG{n}{converged}\PYG{k+kt}{:}
-  \PYG{n}{p\PYGZsq{}} \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{altera}\PYG{p}{(}\PYG{n}{p}\PYG{p}{)}
-  \PYG{n}{p}  \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{seleciona}\PYG{p}{(}\PYG{n}{p} \PYG{o}{+} \PYG{n}{p\PYGZsq{}}\PYG{p}{)}
-\end{Verbatim}

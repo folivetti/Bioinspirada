@@ -1,7 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n+nf}{prob} \PYG{n}{pop} \PYG{o+ow}{=}
-  \PYG{k+kr}{do} \PYG{n}{fPop} \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{map} \PYG{n}{fitness} \PYG{n}{pop}
-     \PYG{n}{tot}  \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{sum} \PYG{n}{fPop}
-     \PYG{n}{p}    \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{map} \PYG{p}{(}\PYG{o}{/}\PYG{n}{tot}\PYG{p}{)} \PYG{n}{fPop}
-     \PYG{n}{return} \PYG{p}{(}\PYG{n}{zip} \PYG{n}{pop} \PYG{n}{p}\PYG{p}{)}
-\end{Verbatim}

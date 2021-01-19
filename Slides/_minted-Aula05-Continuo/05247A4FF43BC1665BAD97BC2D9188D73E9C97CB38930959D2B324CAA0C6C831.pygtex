@@ -1,7 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n+nf}{xi}  \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{randomPoint}
-\PYG{n+nf}{until} \PYG{p}{(}\PYG{n}{termination} \PYG{n}{pop}\PYG{p}{)} \PYG{k+kr}{do}
-  \PYG{n}{zi} \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{gaussianPoint}\PYG{p}{(}\PYG{n}{mu}\PYG{p}{,} \PYG{n}{sigma}\PYG{p}{)}
-  \PYG{n}{yi} \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{xi} \PYG{o}{+} \PYG{n}{zi}
-  \PYG{n}{xi} \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{minimumBy} \PYG{n}{fitness} \PYG{p}{[}\PYG{n}{xi}\PYG{p}{,} \PYG{n}{yi}\PYG{p}{]}
-\end{Verbatim}

@@ -1,7 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n+nf}{pai1} \PYG{o+ow}{=} \PYG{p}{[}\PYG{l+m+mi}{3} \PYG{l+m+mi}{0} \PYG{l+m+mi}{2} \PYG{o}{|} \PYG{l+m+mi}{5} \PYG{l+m+mi}{2} \PYG{l+m+mi}{1}\PYG{p}{]}
-\PYG{n+nf}{pai2} \PYG{o+ow}{=} \PYG{p}{[}\PYG{l+m+mi}{5} \PYG{l+m+mi}{1} \PYG{l+m+mi}{2} \PYG{o}{|} \PYG{l+m+mi}{5} \PYG{l+m+mi}{0} \PYG{l+m+mi}{3}\PYG{p}{]}
-
-\PYG{n+nf}{filho1} \PYG{o+ow}{=} \PYG{p}{[}\PYG{l+m+mi}{3} \PYG{l+m+mi}{0} \PYG{l+m+mi}{2} \PYG{l+m+mi}{5} \PYG{l+m+mi}{0} \PYG{l+m+mi}{3}\PYG{p}{]}
-\PYG{n+nf}{filho2} \PYG{o+ow}{=} \PYG{p}{[}\PYG{l+m+mi}{5} \PYG{l+m+mi}{1} \PYG{l+m+mi}{2} \PYG{l+m+mi}{5} \PYG{l+m+mi}{2} \PYG{l+m+mi}{1}\PYG{p}{]}
-\end{Verbatim}

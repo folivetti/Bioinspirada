@@ -1,7 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n+nf}{nodeMutation} \PYG{n}{tree} \PYG{o+ow}{=} \PYG{n}{mutation}\PYG{p}{(}\PYG{n}{changeNode}\PYG{p}{,} \PYG{n}{tree}\PYG{p}{)}
-
-\PYG{n+nf}{changeNode} \PYG{p}{(}\PYG{k+kt}{Node} \PYG{n}{n} \PYG{n}{ts}\PYG{p}{)} \PYG{o+ow}{=} \PYG{k+kr}{do}
-  \PYG{n}{n\PYGZsq{}} \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{sampleSymb}\PYG{p}{(}\PYG{n}{arity}\PYG{p}{(}\PYG{n}{n}\PYG{p}{))}
-  \PYG{n}{return}\PYG{p}{(}\PYG{k+kt}{Node} \PYG{n}{n\PYGZsq{}} \PYG{n}{ts}\PYG{p}{)}
-\end{Verbatim}

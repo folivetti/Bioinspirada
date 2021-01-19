@@ -1,6 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n+nf}{enquanto} \PYG{n}{não} \PYG{n}{convergir} \PYG{n}{faça}
-  \PYG{n}{para} \PYG{n}{cada} \PYG{n}{formiga}\PYG{k+kt}{:}
-    \PYG{n}{solução}   \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{constroiSolução}\PYG{p}{(}\PYG{n}{feromônio}\PYG{p}{)}
-    \PYG{n}{feromônio} \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{atualiza}\PYG{p}{(}\PYG{n}{feromônio}\PYG{p}{)}
-\end{Verbatim}

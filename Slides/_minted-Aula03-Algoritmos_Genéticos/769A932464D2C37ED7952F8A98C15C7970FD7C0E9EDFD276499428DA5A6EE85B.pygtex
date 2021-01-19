@@ -1,6 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n+nf}{tournament} \PYG{n}{k} \PYG{n}{pop} \PYG{o+ow}{=} \PYG{k+kr}{do}
-  \PYG{c+c1}{\PYGZhy{}\PYGZhy{} trocar por sampleWithoutReplacement se desejado}
-  \PYG{n}{competitors} \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{sampleWithReplacement}\PYG{p}{(}\PYG{n}{k}\PYG{p}{,} \PYG{n}{pop}\PYG{p}{)}
-  \PYG{n}{return} \PYG{p}{(}\PYG{n}{best} \PYG{n}{competitors}\PYG{p}{)}
-\end{Verbatim}

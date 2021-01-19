@@ -1,7 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{l+m+mi}{2}\PYG{o}{\PYGZhy{}}\PYG{n}{opt}\PYG{o}{\PYGZhy{}}\PYG{n}{swap} \PYG{n}{path} \PYG{n}{i} \PYG{n}{j} \PYG{o+ow}{=} \PYG{k+kr}{do}
-  \PYG{n}{pathA} \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{take} \PYG{n}{i} \PYG{n}{path}
-  \PYG{n}{pathB} \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{reverse} \PYG{p}{(}\PYG{n}{take} \PYG{p}{(}\PYG{n}{j}\PYG{o}{\PYGZhy{}}\PYG{n}{i}\PYG{p}{)} \PYG{p}{(}\PYG{n}{drop} \PYG{n}{i} \PYG{n}{path}\PYG{p}{))}
-  \PYG{n}{pathC} \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{drop} \PYG{n}{j} \PYG{n}{path}
-  \PYG{n}{return} \PYG{p}{(}\PYG{n}{pathA} \PYG{o}{\PYGZlt{}\PYGZgt{}} \PYG{n}{pathB} \PYG{o}{\PYGZlt{}\PYGZgt{}} \PYG{n}{pathC}\PYG{p}{)}
-\end{Verbatim}

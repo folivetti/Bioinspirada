@@ -1,6 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n+nf}{mutation} \PYG{n}{f} \PYG{n}{tree} \PYG{o+ow}{=} \PYG{k+kr}{do}
-  \PYG{n}{n}     \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{numberOfNodes}\PYG{p}{(}\PYG{n}{tree}\PYG{p}{)}
-  \PYG{n}{point} \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{random}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{n}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{)}
-  \PYG{n}{applytAt}\PYG{p}{(}\PYG{n}{point}\PYG{p}{,} \PYG{n}{f}\PYG{p}{,} \PYG{n}{tree}\PYG{p}{)}
-\end{Verbatim}
