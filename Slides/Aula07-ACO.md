@@ -165,6 +165,8 @@ aco = do
     pheromone <- updatePheromone(solutions)
 ```
 
+## Ant Colony Optimization {.fragile}
+
 > Dorigo, M. Optimization, Learning and Natural Algorithms. Politecnico di Milano, Italy, 1992.
 
 ## $buildSolution$
@@ -212,7 +214,8 @@ onde:
 
 O feromônio ao longo das iterações, traça dados estatísticos de quanto uma certa parte da solução contribui na sua qualidade, isso deve ser investigado a fundo para tirar maior proveito.
 
-![](figs/distFeromonio.png)
+\centering
+![](figs/distFeromonio.png){ width=200px }
 
 # Variações do ACO
 
@@ -289,15 +292,17 @@ possível resolver problemas contínuos
 
 ## TSP
 
-> Dorigo M., V. Maniezzo & A. Colorni (1996). Ant System: Optimization by a colony of cooperating agents. IEEE Transactions on Systems, Man, and Cybernetics-Part B, 26(1):29- 41
+- Dorigo M., V. Maniezzo & A. Colorni (1996). Ant System: Optimization by a colony of cooperating agents. IEEE Transactions on Systems, Man, and Cybernetics-Part B, 26(1):29- 41
 
-> Colorni A., M.Dorigo, F.Maffioli, V. Maniezzo, G. Righini, M. Trubian (1996). Heuristics from Nature for Hard Combinatorial Problems. International Transactions in Operational Research, 3(1):1-21.
+- Colorni A., M.Dorigo, F.Maffioli, V. Maniezzo, G. Righini, M. Trubian (1996). Heuristics from Nature for Hard Combinatorial Problems. International Transactions in Operational Research, 3(1):1-21.
 
-> Dorigo M. & L.M. Gambardella (1997). Ant Colony System: A Cooperative Learning Approach to the Traveling Salesman Problem. IEEE Transactions on Evolutionary Computation, 1(1):53-66. (Also Tecnical Report TR/IRIDIA/1996-5, IRIDIA, Université Libre de Bruxelles.)
+- Dorigo M. & L.M. Gambardella (1997). Ant Colony System: A Cooperative Learning Approach to the Traveling Salesman Problem. IEEE Transactions on Evolutionary Computation, 1(1):53-66. (Also Tecnical Report TR/IRIDIA/1996-5, IRIDIA, Université Libre de Bruxelles.)
 
-> Dorigo M. & L.M. Gambardella (1997). Ant Colonies for the Traveling Salesman Problem. BioSystems, 43:73-81. Also Tecnical Report TR/IRIDIA/1996-3, IRIDIA, Université Libre de Bruxelles:
+## TSP
 
-> Bullnheimer B., R. F. Hartl & C. Strauss (1999). A New Rank Based Version of the Ant System: A Computational Study. Central European Journal for Operations Research and Economics, 7(1):25-38, 1999.
+- Dorigo M. & L.M. Gambardella (1997). Ant Colonies for the Traveling Salesman Problem. BioSystems, 43:73-81. Also Tecnical Report TR/IRIDIA/1996-3, IRIDIA, Université Libre de Bruxelles:
+
+- Bullnheimer B., R. F. Hartl & C. Strauss (1999). A New Rank Based Version of the Ant System: A Computational Study. Central European Journal for Operations Research and Economics, 7(1):25-38, 1999.
 
 ## Sequential Ordering Problem
 
@@ -312,8 +317,7 @@ vértices e E o conjunto de arestas.
 - Os vértices correspondem às tarefas que devem ser
 realizadas sequencialmente.
 - A cada aresta (i,j) é associado um custo tij que representa o
-tempo necessário para o início da tarefa j após a conclusão de
-i.
+tempo necessário para o início da tarefa j após a conclusão de i.
 
 
 ## Sequential Ordering Problem
@@ -342,7 +346,8 @@ precedência.
 
 ## Vehicle Routing
 
-![](figs/vehicleRoute.png)
+\centering
+![](figs/vehicleRoute.png){ width=200px }
 
 Dado um depósito central, n clientes e m caminhões de
 transporte, distribuir a mercadoria nos n clientes
@@ -374,13 +379,16 @@ veículo irá atender, o problema se torna um TSP.
 
 ## Vehicle Routing
 
-> Bullnheimer B., R.F. Hartl and C. Strauss (1999). An Improved Ant system Algorithm for the Vehicle Routing Problem. Paper presented at the Sixth Viennese workshop on Optimal Control, Dynamic Games, Nonlinear Dynamics and Adaptive Systems, Vienna (Austria), May 21-23, 1997, to appear in: Annals of Operations Research (Dawid, Feichtinger and Hartl (eds.): Nonlinear Economic Dynamics and Control, 1999.
+- Bullnheimer B., R.F. Hartl and C. Strauss (1999). An Improved Ant system Algorithm for the Vehicle Routing Problem. Paper presented at the Sixth Viennese workshop on Optimal Control.
 
-> Bullnheimer B., R.F. Hartl and C. Strauss (1999). Applying the Ant System to the Vehicle Routing Problem. In: Voss S., Martello S., Osman I.H., Roucairol C. (eds.), Meta-Heuristics: Advances and Trends in Local Search Paradigms for Optimization, Kluwer:Boston. Bullnheimer B. (1999). Ant Colony Optimization in Vehicle Routing. Doctoral thesis, University of Vienna, January 1999.
+- Bullnheimer B., R.F. Hartl and C. Strauss (1999). Applying the Ant System to the Vehicle Routing Problem. In: Voss S., Martello S., Osman I.H., Roucairol C. (eds.).
 
 ## Telecomunicação
 
-![](figs/telecom.png)
+\centering
+![](figs/telecom.png){ width=200px }
+
+## Telecomunicação
 
 Balanceamento de dados em uma rede.
 Um problema em gerenciar o balanço de carga que passa
@@ -433,22 +441,24 @@ sofre constantes alterações.
 
 ## Telecomunicação
 
-> SchoonderwoerdTelecommunications R., O. NetworksHolland, J.. AdaptiveBruten and Behavior L. Rothkrantz, 5(2):169 (1997). -207. Ant-based Load Balancing in
+- SchoonderwoerdTelecommunications R., O. NetworksHolland, J.. AdaptiveBruten and Behavior L. Rothkrantz, 5(2):169 (1997). -207. Ant-based Load Balancing in
 
-> Schoonderwoerd R., O. Holland and J. Bruten (1997). Ant-like Agents for Load Balancing in Telecommunications Networks. Proceedings of Agents'97, Marina del Rey, CA, ACM Press, 209 - 216. Di Caro G. and M. Dorigo (1997). AntNet: A Mobile Agents Approach to Adaptive Routing. Tech. Rep. IRIDIA/97 - 12, Université Libre de Bruxelles, Belgium.
+- Schoonderwoerd R., O. Holland and J. Bruten (1997). Ant-like Agents for Load Balancing in Telecommunications Networks. Proceedings of Agents'97, Marina del Rey, CA, ACM Press, 209 - 216. Di Caro G. and M. Dorigo (1997). AntNet: A Mobile Agents Approach to Adaptive Routing. Tech. Rep. IRIDIA/97 - 12, Université Libre de Bruxelles, Belgium.
 
-> Di Caro G. Internationaland Conference M. Dorigo on (1998). System,Mobile IEEE Computer Agents for AdaptiveSociety Press, Los Routing. AlamitosProceedings, CA, 74 of the-83. 31st Hawaii 
+- Di Caro G. Internationaland Conference M. Dorigo on (1998). System,Mobile IEEE Computer Agents for AdaptiveSociety Press, Los Routing. AlamitosProceedings, CA, 74 of the-83. 31st Hawaii 
 
-> Di Caro G. & Journal of Artificial DorigoIntelligence M. (1998). ResearchAntNet: Distributed (JAIR), 9:317 Stigmergetic-365. Control for Communications Networks.
+## Telecomunicação
 
-> Navarro Varela G. and M.C. Sinclair (1999). Ant Colony Optimisation for Virtual-Wavelength-Path Routing and Wavelength Allocation. Proceedings of the Congress on Evolutionary Computation (CEC'99), Washington DC, USA, July 1999.
+- Di Caro G. & Journal of Artificial DorigoIntelligence M. (1998). ResearchAntNet: Distributed (JAIR), 9:317 Stigmergetic-365. Control for Communications Networks.
 
-> DucatelleS, F., G. Di Caro for Routing in Mobile Ad Hoc Networks.and L. M. Gambardella (2005). InternationalUsing Ant AgentsJournal toof ComputationalCombine Reactive Intelligence and Proactive and Applications (IJCIA), Special Issue on Nature-Inspired Approaches to Networks and Telecommunications, Volume 5, Number 2, Pages 169 - 184, June 2005
+- Navarro Varela G. and M.C. Sinclair (1999). Ant Colony Optimisation for Virtual-Wavelength-Path Routing and Wavelength Allocation. Proceedings of the Congress on Evolutionary Computation (CEC'99), Washington DC, USA, July 1999.
+
+- DucatelleS, F., G. Di Caro for Routing in Mobile Ad Hoc Networks.and L. M. Gambardella (2005). InternationalUsing Ant AgentsJournal toof ComputationalCombine Reactive Intelligence and Proactive and Applications (IJCIA).
 
 
 ## Quadratic Assigment Problem
 
-![](figs/qap.png)
+![](figs/qap.png){ width=200px }
 
 Dados p pontos denominados “centros”, alocar n pontos
 para um centro de forma a minimizar a distância total
@@ -484,17 +494,19 @@ indicativo da qualidade de cada pedaço da solução.
 
 ## Quadratic Assigment Problem
 
-> Maniezzo V., A. Colorni and M. Dorigo (1994). The Ant System Applied to the Quadratic Assignment Problem. Tech. Rep. IRIDIA/94-28, Université Libre de Bruxelles, Belgium. 
+- Maniezzo V., A. Colorni and M. Dorigo (1994). The Ant System Applied to the Quadratic Assignment Problem. Tech. Rep. IRIDIA/94-28, Université Libre de Bruxelles, Belgium. 
 
-> Maniezzo V., L. Muzio, A. Colorni and M. Dorigo (1994). Il sistema formiche applicato al problema  dell'assegnamento quadratico. Technical Report No. 94-058, Politecnico di Milano, Italy, in Italian. 
+- Maniezzo V., L. Muzio, A. Colorni and M. Dorigo (1994). Il sistema formiche applicato al problema  dell'assegnamento quadratico. Technical Report No. 94-058, Politecnico di Milano, Italy, in Italian. 
 
-> Taillard E. and L. M. Gambardella (1997). An Ant Approach for Structured Quadratic Assignment Problems. 2nd Metaheuristics International Conference (MIC-97), Sophia-Antipolis, France - July 21-24, 1997
+## Quadratic Assigment Problem
 
-> Maniezzo V. (1998). Exact and approximate nondeterministic tree-search procedures for the quadratic assignment problem. Research Report CSR 98-1, Scienze dell'Informazione, UniversitÂ^ di Bologna, Sede di Cesena, Italy.
+- Taillard E. and L. M. Gambardella (1997). An Ant Approach for Structured Quadratic Assignment Problems. 2nd Metaheuristics International Conference (MIC-97), Sophia-Antipolis, France - July 21-24, 1997
+
+- Maniezzo V. (1998). Exact and approximate nondeterministic tree-search procedures for the quadratic assignment problem. Research Report CSR 98-1, Scienze dell'Informazione, UniversitÂ^ di Bologna, Sede di Cesena, Italy.
 
 ## P-Medianas
 
-![](figs/qap.png)
+![](figs/qap.png){ width=200px }
 
 O mesmo problema anterior mas também é necessário
 escolher a localização dos centros.
@@ -551,18 +563,22 @@ distância total percorrida.
 
 ## P-Medianas
 
-> De França, F. O., F. J. Von Zuben e L. N. de Castro. Definition of Capacited p-Medians by a Modified Max Min Ant System with Local Search. ICONIP - 2004 11th International Conference on Neural Information Processing - SPECIAL SES-SION ON ANT COLONY AND MULTI-AGENT SYSTEMS, v.3316, 2004, p.1094-110. 2004a.
+- De França, F. O., F. J. Von Zuben e L. N. de Castro. Definition of Capacited p-Medians by a Modified Max Min Ant System with Local Search. ICONIP - 2004.
 
-> De França, F. O., F. J. Von Zuben e L. N. de Castro. A Max Min Ant System Applied To The Capacitated Clustering Problem. 2004 IEEE Workshop on Machine Learning for Signal Processing. São Luiz, Brasil: Proceedings of the 2004 IEEE International Workshop on Machine Learning for Signal Processing, 2004b. 755-764 p.
+- De França, F. O., F. J. Von Zuben e L. N. de Castro. A Max Min Ant System Applied To The Capacitated Clustering Problem. 2004 IEEE Workshop on Machine Learning for Signal Processing. 
 
-> De França, F. O., F. J. Von Zuben e L. N. de Castro. Max Min Ant System and Capacitated p-Medians: Extensions and Improved Solutions. Informatica, v.29, n.2, p.163-171. 2005.
+- De França, F. O., F. J. Von Zuben e L. N. de Castro. Max Min Ant System and Capacitated p-Medians: Extensions and Improved Solutions. Informatica, v.29, n.2, p.163-171. 2005.
 
 
 ## ACO para problemas contínuos
 
 - Uma forma de utilizar os conceitos de ACO para otimização em ambientes contínuos é transformar a trilha de feromônio em uma distribuição normal de probabilidade.
 
+## ACO para problemas contínuos
+
 - Como, na realidade, a trilha de feromônio deixada pelas formigas tem uma intensidade crescente e contínua em direção à fonte de alimento, podemos dizer que a intensidade do feromônio tende a aumentar quando caminhando em direção à variável x ótima.
+
+## ACO para problemas contínuos
 
 - O feromônio então se torna algo parecido com: $\tau(x) = e^{- \frac{(x - x_{min})^2}{2\sigma^2}}$
 - Onde $x_{min}$ é o ponto $x$ onde foi obtido o menor valor até o momento e $\sigma$ é a variável que define a dispersão.
@@ -570,7 +586,7 @@ distância total percorrida.
 
 ## De Discreto para Contínuo
 
-![](figs/kernelGauss.png)
+![](figs/kernelGauss.png){ width=200px }
 
 A informação discreta do feromônio é transformada em kernels Gaussianos dos quais novas soluções podem ser amostradas.
 
@@ -610,59 +626,68 @@ amostrado ($updatePheromone$):
 
 ## MACACO
 
-![](figs/macacoUniforme.png)
+\centering
+![](figs/macacoUniforme.png){ width=250px }
 
 O processo inicia com amostras com distribuição uniforme
 
 ## MACACO
 
-![](figs/macacoSelection.png)
+\centering
+![](figs/macacoSelection.png){ width=250px }
 
 As melhores soluções (em vermelho) são utilizadas para calcular o feromônio
 
 ## MACACO
 
-![](figs/macacoCov.png)
+\centering
+![](figs/macacoCov.png){ width=250px }
 
 A nova matriz de covariância é calculada e o centro da distribuição será a melhor solução
 
 ## MACACO
 
-![](figs/macacoUpdate.png)
+\centering
+![](figs/macacoUpdate.png){ width=250px }
 
 Em seguida, as formigas utilizam a nova distribuição paragerar novas amostras
 
 ## MACACO
 
-![](figs/macacoRepeat.png)
+\centering
+![](figs/macacoRepeat.png){ width=250px }
 
 E o processo continua...
 
 
 ## MACACO
 
-![](figs/macacoConverge.png)
+\centering
+![](figs/macacoConverge.png){ width=250px }
 
 ...até a p.d.f. Gaussiana convergir
 
 
 ## MACACO
 
-![](figs/macacoFinal.png)
+\centering
+![](figs/macacoFinal.png){ width=250px }
 
 Depois disso, a variância da Gaussiana é aumentada e o
 processo repetido, mas agora o centro da p.d.f. será a
 média das amostras.
 
-### ACO para problemas contínuos
+## ACO para problemas contínuos
 
-> Seid H. Pourtakdoust, Hadi Nobahari: An Extension of Ant Colony System to Continuous Optimization Problems. ANTS Workshop 2004: 294-301.
+- Seid H. Pourtakdoust, Hadi Nobahari: An Extension of Ant Colony System to Continuous Optimization Problems. ANTS Workshop 2004: 294-301.
 
-> Mathur, M., Karale, S.B., Priye, S., Jayaraman, V.K., and Kulkarni, B.D. Ant Colony Approach to Continuous Function Optimization. Ind. Eng. Chem. Res., 39, 10, 3814 - 3822, 2000, 10.1021/ie990700g
+- Mathur, M., Karale, S.B., Priye, S., Jayaraman, V.K., and Kulkarni, B.D. Ant Colony Approach to Continuous Function Optimization. Ind. Eng. Chem. Res., 39, 10, 3814 - 3822, 2000, 10.1021/ie990700g
 
-> Socha, K., Dorigo, M., Ant colony optimization for continuous domains, Eur. J.Oper. Res. (2006), doi:10.1016/j.ejor.2006.06.046
+## ACO para problemas contínuos
 
-> FRANÇA, F. O. ; COELHO, G. P. ; ATTUX, R. R. F. ; VON ZUBEN, F. J. . Multivariate ant colony optimization in continuous search spaces. In: Genetic and Evolutionary Computation Conference, 2008, Atlanta. Proceedings of the 10th annual conference on Genetic and evolutionary computation. New York : ACM Press, 2008. p. 9-16.
+- Socha, K., Dorigo, M., Ant colony optimization for continuous domains, Eur. J.Oper. Res. (2006), doi:10.1016/j.ejor.2006.06.046
+
+- FRANÇA, F. O. ; COELHO, G. P. ; ATTUX, R. R. F. ; VON ZUBEN, F. J. . Multivariate ant colony optimization in continuous search spaces. In: Genetic and Evolutionary Computation Conference, 2008, Atlanta. Proceedings of the 10th annual conference on Genetic and evolutionary computation. New York : ACM Press, 2008. p. 9-16.
 
 ## Ant Clustering Algorithm (ACA)
 
@@ -684,68 +709,78 @@ média das amostras.
 
 Construa um grid bidimensional de tal forma que a área seja maior que a quantidade de objetos a serem agrupados.
 
-![](figs/aca1.png)
+\centering
+![](figs/aca1.png){ width=200px }
 
 ## Ant Clustering Algorithm (ACA)
  
 Aloque cada objeto exclusivamente em um dos quadrados aleatoriamente.
 
-![](figs/aca2.png)
+\centering
+![](figs/aca2.png){ width=200px }
 
 ## Ant Clustering Algorithm (ACA)
 
 Espalhe as formigas pelo grid.
 
-![](figs/aca3.png)
+\centering
+![](figs/aca3.png){ width=200px }
 
 ## Ant Clustering Algorithm (ACA)
 
 Em cada iteração, ande aleatoriamente em uma posição com cada formiga.
 
-![](figs/aca4.png)
+\centering
+![](figs/aca4.png){ width=200px }
 
 ## Ant Clustering Algorithm (ACA)
 
 Se a formiga estiver em um quadrado contendo um objeto, pegue tal objeto com probabilidade pp.
 
-![](figs/aca5.png)
+\centering
+![](figs/aca5.png){ width=200px }
 
 ## Ant Clustering Algorithm (ACA)
 
 Repita o procedimento de caminhada aleatória e,...
 
-![](figs/aca6.png)
+\centering
+![](figs/aca6.png){ width=200px }
 
 ## Ant Clustering Algorithm (ACA)
 
 ...
 
-![](figs/aca7.png)
+\centering
+![](figs/aca7.png){ width=200px }
 
 ## Ant Clustering Algorithm (ACA)
 
 ...
 
-
-![](figs/aca8.png)
-
-## Ant Clustering Algorithm (ACA)
-
-...
-
-![](figs/aca9.png)
+\centering
+![](figs/aca8.png){ width=200px }
 
 ## Ant Clustering Algorithm (ACA)
 
 ...
 
-![](figs/aca10.png)
+\centering
+![](figs/aca9.png){ width=200px }
+
+## Ant Clustering Algorithm (ACA)
+
+...
+
+\centering
+![](figs/aca10.png){ width=200px }
 
 ## Ant Clustering Algorithm (ACA)
 
 ...descarregue o objeto com probabilidade pd.
 
-![](figs/aca11.png)
+\centering
+![](figs/aca11.png){ width=200px }
 
 ## Ant Clustering Algorithm (ACA)
 

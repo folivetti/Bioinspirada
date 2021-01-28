@@ -15,8 +15,8 @@ como:
 - voo de bando de pássaros
 - nado sincronizado de cardume de peixes
 
-![](figs/birds.png)
-![](figs/fishes.png)
+![](figs/birds.png){ width=200px }
+![](figs/fishes.png){ width=200px }
 
 ## Comportamento Coordenado
 
@@ -25,7 +25,7 @@ Ele propôs o seguinte modelo comportamental baseado em 3 regras:
 - **Separação:** cada agente tenta se distanciar de seu vizinho se estiver muito próximo.
 
 
-![](figs/separacao.png)
+![](figs/separacao.png){ width=200px }
 
 [iridia.ulb.ac.be/~mmontes/slidesCIL/slides.pdf](iridia.ulb.ac.be/~mmontes/slidesCIL/slides.pdf)
 
@@ -35,14 +35,14 @@ Ele propôs o seguinte modelo comportamental baseado em 3 regras:
 - **Alinhamento:** cada agente segue a direção média de seus vizinhos.
 
 
-![](figs/alinhamento.png)
+![](figs/alinhamento.png){ width=200px }
 
 
 ## Comportamento Coordenado
 
 - **Coesão:** cada agente tenta seguir na posição média de seus vizinhos.
 
-![](figs/coesao.png)
+![](figs/coesao.png){ width=200px }
 
 
 
@@ -229,7 +229,7 @@ O valor de $w$ pode ser reduzido com o passar das iterações:
 - Função não-linear
 - Adaptativo (ES)
 
-![](figs/inercia.png)
+![](figs/inercia.png){ width=200px }
 
 ## PSO Fully Informed
 

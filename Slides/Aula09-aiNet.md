@@ -4,6 +4,8 @@ author: Fabrício Olivetti de França
 date: 01 de fevereiro de 2020
 ---
 
+# Sistema Imunológico
+
 ## Sistema Imunológico
 
 Sistema altamente adaptativo e eficiente:
@@ -171,7 +173,7 @@ sistemas do organismo.
 células do organismo.
 
 
-# SISTEMAS IMUNES ARTIFICIAS
+# Sistema Imunológico Artificial
 
 ## Histórico
 
@@ -537,6 +539,8 @@ clonal = do
 > De Castro, Leandro N., and Fernando J. Von Zuben. "Learning and optimization using the clonal selection principle." Evolutionary Computation, IEEE Transactions on 6.3 (2002): 239-251.
 
 
+# Redes Imunológicas
+
 ## Artificial Immune Network
 
 Baseado na teoria das redes imunológicas de Jerne.
@@ -641,21 +645,21 @@ tamanho da população varie com as iterações.
 
 ## Exemplo
 
-![](figs/diversity.png)
+![](figs/diversity.png){ width=250px }
 
-> de França, F. O., Guilherme Palermo Coelho, and Fernando J. Von Zuben. "On the diversity mechanisms of opt-aiNet: A comparative study with fitness
+- de França, F. O., Guilherme Palermo Coelho, and Fernando J. Von Zuben. "On the diversity mechanisms of opt-aiNet: A comparative study with fitness
 sharing." Evolutionary Computation (CEC), 2010 IEEE Congress on. IEEE, 2010.
 
 ## Exemplo
 
-![](figs/ainet1.png)
+![](figs/ainet1.png){ width=250px }
 
 Inicialmente é gerada uma população de soluções
 aleatoriamente.
 
 ## Exemplo
 
-![](figs/ainet1.png)
+![](figs/ainet1.png){ width=250px }
 
 Em seguida, cada solução passa por um processo de
 clonagem e mutação (explicado à seguir), indo em
@@ -663,28 +667,28 @@ direção ao ótimo local mais próximo.
 
 ## Exemplo
 
-![](figs/ainet1.png)
+![](figs/ainet1.png){ width=250px }
 
 De tempos em tempos, novas soluções são inseridas em
 posições aleatórias.
 
 ## Exemplo
 
-![](figs/ainet1.png)
+![](figs/ainet1.png){ width=250px }
 
 E aquelas que estão em regiões de ótimos locais já
 identificados, são removidas.
 
 ## *-aiNet
 
-![](figs/ainet2.png)
+![](figs/ainet2.png){ width=250px }
 
 Reparem que o tamanho da população foi alterado em
 relação ao início do processo.
 
 ## *-aiNet
 
-![](figs/ainet3.png)
+![](figs/ainet3.png){ width=250px }
 
 O algoritmo se adapta a superfície de busca de forma a
 tentar identificar o maior número possível de soluções
@@ -692,7 +696,7 @@ tentar identificar o maior número possível de soluções
 
 ## *-aiNet
 
-![](figs/ainet4.png)
+![](figs/ainet4.png){ width=250px }
 
 Para cada solução é efetuado o processo de clonagem e
 mutação, onde é gerado uma cópia (clone) de cada uma
@@ -701,7 +705,7 @@ torno de uma pequena região.
 
 ## *-aiNet
 
-![](figs/ainet5.png)
+![](figs/ainet5.png){ width=250px }
 
 O objetivo da mutação é encontrar o ótimo local mais
 próximo, ao contrário das Estratégias Evolutivas que a
@@ -710,7 +714,7 @@ utiliza para retardar a convergência.
 
 ## *-aiNet
 
-![](figs/ainet6.png)
+![](figs/ainet6.png){ width=250px }
 
 O objetivo da mutação é encontrar o ótimo local mais
 próximo, ao contrário das Estratégias Evolutivas que a
@@ -719,7 +723,7 @@ utiliza para retardar a convergência.
 
 ## *-aiNet
 
-![](figs/ainet7.png)
+![](figs/ainet7.png){ width=250px }
 
 O objetivo da mutação é encontrar o ótimo local mais
 próximo, ao contrário das Estratégias Evolutivas que a
@@ -727,7 +731,7 @@ utiliza para retardar a convergência.
 
 ### *-aiNet
 
-![](figs/ainet8.png)
+![](figs/ainet8.png){ width=250px }
 
 O objetivo da mutação é encontrar o ótimo local mais
 próximo, ao contrário das Estratégias Evolutivas que a
@@ -735,7 +739,7 @@ utiliza para retardar a convergência.
 
 ## *-aiNet
 
-![](figs/ainet9.png)
+![](figs/ainet9.png){ width=250px }
 
 O objetivo da mutação é encontrar o ótimo local mais
 próximo, ao contrário das Estratégias Evolutivas que a
@@ -743,7 +747,7 @@ utiliza para retardar a convergência.
 
 ## *-aiNet
 
-![](figs/ainet10.png)
+![](figs/ainet10.png){ width=250px }
 
 O objetivo da mutação é encontrar o ótimo local mais
 próximo, ao contrário das Estratégias Evolutivas que a
@@ -752,12 +756,13 @@ utiliza para retardar a convergência.
 
 ## *-aiNet
 
-![](figs/ainet11.png)
+![](figs/ainet11.png){ width=250px }
 
 O objetivo da mutação é encontrar o ótimo local mais
 próximo, ao contrário das Estratégias Evolutivas que a
 utiliza para retardar a convergência.
 
+# aiNet para representação de permutação
 
 ## copt-aiNet
 
@@ -788,26 +793,21 @@ máxima.
 
 ## Supressão para permutação {.fragile}
 
-Entrada: $P1$ e $P2$
-
-Saída: similaridade $S$
-
 ```haskell
 similarity p1 p2 = do
   s <- 0
   k <- 1
-  i <- p1[k]
-  m <- index(p2==i)
+  m <- index(p2==p1[k])
   while k < |p1| do
     k <- k+1
-    i <- p1[k]
-    n <- index(p2==i)
+    n <- index(p2==p1[k])
     ix1 <- if m+1 > |p1| then 1 else m+1
     ix2 <- if m-1 < 1 then |p1| else m-1
     if n =/= ix1 and n =/= ix2
       then s <- s + 1
       else s <- s
     m <- n
+  return (s)
 ```
 
 
