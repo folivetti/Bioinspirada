@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nf}{eval} \PYG{p}{(}\PYG{k+kt}{Node} \PYG{n}{v} \PYG{k+kt}{[]}\PYG{p}{)}          \PYG{o+ow}{=} \PYG{n}{return} \PYG{p}{(}\PYG{n}{v}\PYG{p}{)}
+\PYG{n+nf}{eval} \PYG{p}{(}\PYG{k+kt}{Node} \PYG{n}{f} \PYG{n}{children}\PYG{p}{)} \PYG{n}{xs} \PYG{o+ow}{=} \PYG{k+kr}{do}
+  \PYG{n}{vals} \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{map} \PYG{n}{eval} \PYG{n}{xs}
+  \PYG{n}{return} \PYG{p}{(}\PYG{n}{f} \PYG{n}{vals}\PYG{p}{)}
+\end{Verbatim}

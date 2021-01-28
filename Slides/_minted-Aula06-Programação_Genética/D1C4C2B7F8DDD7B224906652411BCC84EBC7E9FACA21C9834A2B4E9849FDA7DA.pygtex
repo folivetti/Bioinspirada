@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nf}{ramped} \PYG{n}{min}\PYG{o}{\PYGZhy{}}\PYG{n}{depth} \PYG{n}{max}\PYG{o}{\PYGZhy{}}\PYG{n}{depth} \PYG{n}{n}\PYG{o}{\PYGZhy{}}\PYG{n}{pop} \PYG{o+ow}{=}
+  \PYG{n}{range}  \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{max}\PYG{o}{\PYGZhy{}}\PYG{n}{depth} \PYG{o}{\PYGZhy{}} \PYG{n}{min}\PYG{o}{\PYGZhy{}}\PYG{n}{depth} \PYG{o}{+} \PYG{l+m+mi}{1}
+  \PYG{n}{n}      \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{n}\PYG{o}{\PYGZhy{}}\PYG{n}{pop} \PYG{o}{/} \PYG{l+m+mi}{2}  \PYG{c+c1}{\PYGZhy{}\PYGZhy{} divisão inteira}
+  \PYG{p}{(}\PYG{n}{q}\PYG{p}{,} \PYG{n}{r}\PYG{p}{)} \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{p}{(}\PYG{n}{n} \PYG{o}{/} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{n}{n} \PYG{o}{\PYGZpc{}} \PYG{l+m+mi}{2}\PYG{p}{)}
+  \PYG{n}{treesFull} \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{for} \PYG{p}{[}\PYG{l+m+mi}{1}\PYG{o}{..}\PYG{n}{q}\PYG{p}{]} \PYG{p}{(}\PYG{n}{full} \PYG{n}{min}\PYG{o}{\PYGZhy{}}\PYG{n}{depth}\PYG{p}{)}
+  \PYG{n}{treesGrow} \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{for} \PYG{p}{[}\PYG{l+m+mi}{1}\PYG{o}{..}\PYG{n}{q}\PYG{o}{+}\PYG{n}{r}\PYG{p}{]} \PYG{p}{(}\PYG{n}{grow} \PYG{n}{min}\PYG{o}{\PYGZhy{}}\PYG{n}{depth}\PYG{p}{)}
+  \PYG{n}{trees}     \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{ramped}\PYG{p}{(}\PYG{n}{min}\PYG{o}{\PYGZhy{}}\PYG{n}{depth}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{max}\PYG{o}{\PYGZhy{}}\PYG{n}{depth}\PYG{p}{,} \PYG{n}{n}\PYG{o}{\PYGZhy{}}\PYG{n}{pop} \PYG{o}{\PYGZhy{}} \PYG{n}{n}\PYG{p}{)}
+  \PYG{n}{return} \PYG{p}{(}\PYG{n}{treesFull} \PYG{o}{\PYGZlt{}\PYGZgt{}} \PYG{n}{treesGrow} \PYG{o}{\PYGZlt{}\PYGZgt{}} \PYG{n}{trees}\PYG{p}{)}
+\end{Verbatim}

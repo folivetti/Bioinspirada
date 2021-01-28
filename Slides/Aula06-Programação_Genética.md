@@ -134,8 +134,8 @@ gp = do
         then do ix       <- random(0, n)
                 child    <- mutate(pop[ix])
                 children <- children <> child
-        else do (parent1, parent2) <- randomParents(pop)
-                (child1 , child2 ) <- combine(parent1, parent2)
+        else do (p1, p2) <- randomParents(pop)
+                (child1 , child2 ) <- combine(p1, p2)
                 children <- children <> [child1, child2]
 ```
 
@@ -264,7 +264,8 @@ ramped min-depth max-depth n-pop =
   (q, r) <- (n / 2, n % 2)
   treesFull <- for [1..q] (full min-depth)
   treesGrow <- for [1..q+r] (grow min-depth)
-  return (treesFull <> treesGrow <> ramped(min-depth+1, max-depth, n-pop - n)
+  trees     <- ramped(min-depth+1, max-depth, n-pop - n)
+  return (treesFull <> treesGrow <> trees)
 ```
 
 # Operadores
@@ -510,10 +511,12 @@ changeAt p f node = do
 changeChildren p f []     = return([])
 changeChildren p f (t:ts) = do
   if numberOfNodes(t) < p
-    then do ts' <- changeChildren(p - numberOfNodes(t), f, ts)
-            return(prepend(t,ts'))
-    else do t' <- changeAt(p,f,t)
-            return(prepend(t',ts)
+    then 
+      do ts' <- changeChildren(p - numberOfNodes(t), f, ts)
+         return(prepend(t,ts'))
+    else 
+      do t' <- changeAt(p,f,t)
+         return(prepend(t',ts)
 ```
 
 ## Mutação Tradicional {.fragile}
@@ -601,6 +604,13 @@ O algoritmo de avaliação de uma árvore de expressão é um algoritmo simples 
 
 ## Avaliação {.fragile}
 
+```haskell
+eval (Node v [])          = return (v)
+eval (Node f children) xs = do
+  vals <- map eval xs
+  return (f vals)
+```
+
 # Bloat
 
 ## Bloat
@@ -663,4 +673,17 @@ Finalmente, podemos adicionar mecanismos que desfavoreçam a seleção de progra
 
 ## Para Saber Mais
 
-http://www0.cs.ucl.ac.uk/staff/W.Langdon/ftp/papers/poli08_fieldguide.pdf
+- [Field Guide - GP](http://www0.cs.ucl.ac.uk/staff/W.Langdon/ftp/papers/poli08_fieldguide.pdf)
+- [Livro - Koza](http://gpbib.cs.ucl.ac.uk/gp-html/koza_book.html)
+- [Livro 2 - Koza](http://gpbib.cs.ucl.ac.uk/gp-html/koza_gp2.html)
+- [Livro 3 - Koza](http://gpbib.cs.ucl.ac.uk/gp-html/koza_gp3.html)
+- [Livro 4 - Koza](http://gpbib.cs.ucl.ac.uk/gp-html/koza_gp4.html)
+
+## Para Saber Mais
+
+- [Genetic Programming The Movie Part 1](https://youtu.be/tTMpKrKkYXo)
+- [Genetic Programming The Movie Part 2](https://youtu.be/pRk6cth7Bpg)
+- [Genetic Programming III: Human Competitive Machine Intelligence](https://youtu.be/8DY7akqFvfw)
+- [Genetic Programming IV Video: Human-Competitive Machine Intelligence](https://youtu.be/R10GopQBsMc)
+
+

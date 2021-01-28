@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nf}{changeChildren} \PYG{n}{p} \PYG{n}{f} \PYG{k+kt}{[]}     \PYG{o+ow}{=} \PYG{n}{return}\PYG{p}{(}\PYG{k+kt}{[]}\PYG{p}{)}
+\PYG{n+nf}{changeChildren} \PYG{n}{p} \PYG{n}{f} \PYG{p}{(}\PYG{n}{t}\PYG{k+kt}{:}\PYG{n}{ts}\PYG{p}{)} \PYG{o+ow}{=} \PYG{k+kr}{do}
+  \PYG{k+kr}{if} \PYG{n}{numberOfNodes}\PYG{p}{(}\PYG{n}{t}\PYG{p}{)} \PYG{o}{\PYGZlt{}} \PYG{n}{p}
+    \PYG{k+kr}{then}
+      \PYG{k+kr}{do} \PYG{n}{ts\PYGZsq{}} \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{changeChildren}\PYG{p}{(}\PYG{n}{p} \PYG{o}{\PYGZhy{}} \PYG{n}{numberOfNodes}\PYG{p}{(}\PYG{n}{t}\PYG{p}{),} \PYG{n}{f}\PYG{p}{,} \PYG{n}{ts}\PYG{p}{)}
+         \PYG{n}{return}\PYG{p}{(}\PYG{n}{prepend}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,}\PYG{n}{ts\PYGZsq{}}\PYG{p}{))}
+    \PYG{k+kr}{else}
+      \PYG{k+kr}{do} \PYG{n}{t\PYGZsq{}} \PYG{o+ow}{\PYGZlt{}\PYGZhy{}} \PYG{n}{changeAt}\PYG{p}{(}\PYG{n}{p}\PYG{p}{,}\PYG{n}{f}\PYG{p}{,}\PYG{n}{t}\PYG{p}{)}
+         \PYG{n}{return}\PYG{p}{(}\PYG{n}{prepend}\PYG{p}{(}\PYG{n}{t\PYGZsq{}}\PYG{p}{,}\PYG{n}{ts}\PYG{p}{)}
+\end{Verbatim}
