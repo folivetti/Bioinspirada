@@ -491,7 +491,7 @@ Na mutação por encolhimento, um nó não-terminal é escolhido e é substituí
 mutation f tree = do
   n     <- numberOfNodes(tree)
   point <- random(0, n-1)
-  applytAt(point, f, tree)
+  changeAt(point, f, tree)
 ```
 
 ## Implementando a mutação {.fragile}
