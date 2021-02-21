@@ -1,18 +1,18 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.4.5)  11 JAN 2021 09:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.4.5)  20 FEB 2021 18:54
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
-**Aula04-TSP.md.tex
+**Aula10-Redes_Neurais.tex
 
 ! Emergency stop.
-<*> Aula04-TSP.md.tex
-                     
+<*> Aula10-Redes_Neurais.tex
+                            
 End of file on the terminal!
 
  
 Here is how much of TeX's memory you used:
  3 strings out of 492982
- 115 string characters out of 6134897
+ 122 string characters out of 6134897
  53916 words of memory out of 5000000
  3671 multiletter control sequences out of 15000+600000
  3640 words of font info for 14 fonts, out of 8000000 for 9000

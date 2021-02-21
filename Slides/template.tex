@@ -240,10 +240,15 @@ $endfor$
 \newcommand{\norm}[1]{\left\lVert#1\right\rVert}
 
 \usepackage{xcolor}
+\usepackage{cancel}
+
 \definecolor{commentgreen}{RGB}{2,112,10}
 \definecolor{eminence}{RGB}{108,48,130}
 \definecolor{weborange}{RGB}{255,165,0}
 \definecolor{frenchplum}{RGB}{129,20,83}
+
+\newcommand\hcancel[2][black]{\setbox0=\hbox{#2}%
+\rlap{\raisebox{.45\ht0}{\textcolor{#1}{\rule{\wd0}{1pt}}}}#2} 
 
 \lstset{
     basicstyle=\footnotesize\linespread{0.8}\ttfamily, % Default font
